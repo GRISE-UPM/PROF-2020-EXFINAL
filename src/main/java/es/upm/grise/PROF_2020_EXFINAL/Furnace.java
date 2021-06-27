@@ -4,10 +4,14 @@ import static es.upm.grise.PROF_2020_EXFINAL.FurnaceStatus.*;
 
 public class Furnace {
 	
-	TemperatureSensor sensor;
+	private TemperatureSensor sensor;
 	
-	public Furnace() {
-		sensor = new TemperatureSensor();
+	/*
+	 * public Furnace() { sensor = new TemperatureSensor(); }
+	 */
+	
+	public Furnace(TemperatureSensor sensor) {
+		this.sensor = sensor;
 	}
 	
 	public FurnaceStatus checkStatus() {
